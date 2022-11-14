@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+</head>
+
+<body>
+    <h3>Formularz</h3>
+    <form>
+        <p>
+            <label for="tekstowe">Pole tekstowe</label>
+            <input type="text" name="tekstowe" id="tekstowe" value="Jan" size="10" maxlength="10">
+        </p>
+        <p>
+            <label>Pole hasła</label>
+            <input type="password" name="haslo" size="10" maxlength="10" required>
+        </p>
+        <p>
+            <label>Liczby</label>
+            <input type="number" name="liczby" min="0" max="100" step="10">
+        </p>
+        <p>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="jan.kowalski@email.com">
+        </p>
+        <p>
+            <label>Text area</label>
+            <textarea name="textarea" cols="30" rows="10">Tutaj wpisz swój komentarz</textarea>
+        </p>
+        <p>
+            <label>Plik</label>
+            <input type="file" name="plik">
+        </p>
+        <p>
+            <label>Kolor</label>
+            <input type="color" name="kolor">
+        </p>
+        <p>
+            <label>Zakres</label>
+            <input type="range" name="zakres">
+        </p>
+        <p>
+            <label>Adres url</label>
+            <input type="url" name="link">
+        </p>
+        <p>
+            <label>Wyszukiwaraka</label>
+            <input type="search" name="szukaj">
+        </p>
+        <p>
+            <label>Telefon</label>
+            <input type="tel" name="telefon">
+        </p>
+
+        <fieldset>
+            <legend>Data i czas</legend>
+            <p>
+                <label>Pole daty</label>
+                <input type="date" name="data" min="2000-01-01">
+            </p>
+            <p>
+                <label>Czas</label>
+                <input type="time" name="czas">
+            </p>
+            <p>
+                <label>Tydzien</label>
+                <input type="week" name="tydzien">
+            </p>
+            <p>
+                <label>Miesiac</label>
+                <input type="month" name="miesiac">
+            </p>
+
+        </fieldset>
+        <fieldset width="500">
+            <legend>Pola wyboru</legend>
+            <p>
+                <input type="radio" name="radio" value="r1">
+                <label>Radio 1</label><br />
+                <input type="radio" name="radio" value="r2">
+                <label>Radio 2</label><br />
+                <input type="radio" name="radio" value="r3" checked>
+                <label>Radio 3</label>
+            </p>
+            <p>
+                <input type="checkbox" name="checkbox" value="ch1" checked><label>Checkbox 1</label><br />
+                <input type="checkbox" name="checkbox" value="ch2" checked><label>Checkbox 2</label><br />
+                <input type="checkbox" name="checkbox" value="ch3"><label>Checkbox 3</label><br />
+            </p>
+            <p>
+                <select name="select">
+                    <optgroup label="Wybor 1">
+                        <option value="o1">Opcja 1</option>
+                    </optgroup>
+                    <optgroup label="Wybor 2">
+                        <option value="o2" selected>Opcja 2</option>
+                        <option value="o3">Opcja 3</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <select name="select-multi" size="3" multiple>
+                    <option value="o1">Opcja 1</option>
+                    <option value="o2" selected>Opcja 2</option>
+                    <option value="o3" selected>Opcja 3</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" name="submit" value="Wyślij">
+            <input type="reset" name="reset" value="Wyczyść">
+        </p>
+
+    </form>
+</body>
+
+</html>

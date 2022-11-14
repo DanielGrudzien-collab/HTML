@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listy</title>
+</head>
+<body>
+    <h3>Listy uporządkowane</h3>
+    <!-- lista od 1 do n -->
+    <ol>
+        <li>Krysia</li>
+        <li>Basia</li>
+        <li>Helena</li>
+        <li>Mariona</li>
+        <li>Agata</li>
+    </ol>
+    <!-- Atrybut type - modyfikacja punktora -->
+    <ol type="A">
+        <li>Krysia</li>
+        <li>Basia
+            <ol>
+                <li>Lucynka</li>
+            </ol>
+        </li>
+        <li>Helena</li>
+        <li>Mariona</li>
+        <li>Agata</li>
+    </ol>
+    <h3>Listy nieuporządkowane</h3>
+    <ul>
+        <li>Kotek</li>
+        <li>Piesek
+            <ul type="cirlce">
+                <li>Gnat</li>
+            </ul>
+        </li>
+        <li>Konik</li>
+        <li>Krówka
+            <ul type="cirlce">
+                <li>Sroka</li>
+            </ul>
+        </li>
+        <li>Chomiczek</li>
+    </ul>
+    
+    <h3>Listy definicji</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+    </dl>
+</body>
+</html>
